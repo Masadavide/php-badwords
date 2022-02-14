@@ -5,6 +5,12 @@
 
     $len = strlen($string);
 
+    $url = $_GET["censura"];
+
+    $dacensurare = '*******';
+
+    $string = str_replace($url,$dacensurare,$string);
+
 ?>
 
 
